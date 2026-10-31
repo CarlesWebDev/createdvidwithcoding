@@ -19,14 +19,16 @@
     "@types/react": "19.2.7",
     "@types/web": "0.0.166",
     "eslint": "10.12.0",
+    "node-edge-tts": "^1.2.12",
     "prettier": "3.8.1",
     "typescript": "5.9.3"
   },
   "scripts": {
     "dev": "remotion studio",
+    "render:vertical": "remotion render src/index.ts Promo-Vertical out/promo-9x16.mp4",
+    "render:landscape": "remotion render src/index.ts Promo-Landscape out/promo-16x9.mp4",
     "build": "remotion bundle",
-    "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "upgrade": "remotion upgrade"
   },
   "allowScripts": {
     "esbuild": false
